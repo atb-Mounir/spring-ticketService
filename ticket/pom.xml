@@ -170,11 +170,12 @@
 
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>Spring-framework-bom</artifactId>
+                <artifactId>spring-framework-bom</artifactId>
                 <version>${spring.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

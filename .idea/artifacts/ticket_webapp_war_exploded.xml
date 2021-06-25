@@ -34,9 +34,6 @@
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-jcl:2.6.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.15.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.15.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.15.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.15.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.15.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.15.RELEASE" />
           <element id="library" level="project" name="Maven: javax.ws.rs:javax.ws.rs-api:2.1" />
           <element id="library" level="project" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.26" />
@@ -62,6 +59,10 @@
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.5.0-b42" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.22.0-CR2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.15.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

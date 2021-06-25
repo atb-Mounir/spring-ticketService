@@ -3,8 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    =========== Déclaration des Managers ===========-->
+    <bean id="projetManager" class="org.example.demo.ticket.business.impl.manager.ProjetManagerImpl" />
+    <bean id="ticketManager" class="org.example.demo.ticket.business.impl.manager.TicketManagerImpl" />
 
-    <!--    ============= Déclaration des Managers ============     -->
+    <!--    =========== ManagerFactory ===========-->
+    <bean id="managerFactory" class="org.example.demo.ticket.business.impl.ManagerFactory" >
+        <property name="projetManager" ref="projetManager"/>
+        <property name="ticketManager" ref="ticketManager"/>
+    </bean>
 
-    <bean id="projetManager" class="org.example.demo.ticket.business.manager."/>
+    <!--    =========== Injection de la ManagerFactory dans la class AbstractRessource avec MethodInvokingFactoryBean ===========-->
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetClass" value="org.example.demo.ticket.webapp.rest.resource.AbstractResource" />
+        <property name="targetMethod" value="setManagerFactory" />
+        <property name="arguments" ref="managerFactory" />
+
+    </bean>
+
 </beans>
